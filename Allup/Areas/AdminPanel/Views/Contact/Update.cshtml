@@ -1,0 +1,34 @@
+﻿@using Allup.DAL.Entities;
+@model Contact
+<div class="container-fluid">
+   <div class="container-fluid">
+     <div class="card">
+       <div class="card-body">
+         <h5 class="card-title fw-semibold mb-4">Contact Update</h5>
+         <div class="card">
+           <div class="card-body">
+             <form method="post">
+               <div class="mb-3">
+                 <label asp-for="Address"  class="form-label">Address</label>
+                 <input  asp-for="Address" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               </div>
+               <div class="mb-3">
+                 <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                 <input asp-for="PhoneNumber" type="text" class="form-control" id="exampleInputPassword1">
+               </div>
+              <div class="mb-3">
+                 <label asp-for="Email" class="form-label">Email</label>
+                 <input asp-for="Email" type="email" class="form-control" id="exampleInputPassword1">
+               </div>
+               <div class="mb-3">
+                 <label asp-for="WorkingHours" class="form-label">Working Hours</label>
+                 <input asp-for="WorkingHours" type="text" class="form-control" id="exampleInputPassword1">
+               </div>
+               <button type="submit" class="btn btn-primary">Submit</button>
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</div>
